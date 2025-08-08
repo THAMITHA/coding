@@ -1,0 +1,20 @@
+<div id="user-list">
+  <ul>
+    <li>Alice</li>
+    <li>Bob</li>
+    <li>Charlie</li>
+  </ul>
+</div>
+
+<script>
+  //  Add a new user "David"
+  const ulElement = document.querySelector('#user-list ul');
+  const newLi = document.createElement('li');
+  newLi.textContent = 'David';
+  ulElement.appendChild(newLi);
+
+  //  Remove the first user from the list
+  if (ulElement.firstElementChild) {
+    ulElement.removeChild(ulElement.firstElementChild);
+  }
+</script>
